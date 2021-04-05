@@ -1,0 +1,114 @@
+[
+  {
+    "comments": [
+      {
+        "line": 2,
+        "value": "#Funcionalidade: Consulta"
+      },
+      {
+        "line": 3,
+        "value": "# Cenario: Consultar Ovo de Pascoa"
+      },
+      {
+        "line": 4,
+        "value": "#  Dado que acesso a Wikipedia em Portugues"
+      },
+      {
+        "line": 5,
+        "value": "#  Quando pesquiso por \"Ovo de Páscoa\""
+      },
+      {
+        "line": 6,
+        "value": "#  Entao exibe a expressao \"Ovo de Páscoa\" no titulo da guia"
+      }
+    ],
+    "line": 8,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2883940100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Consultar Ovo de Pascoa",
+        "description": "",
+        "id": "consulta;consultar-ovo-de-pascoa",
+        "after": [
+          {
+            "result": {
+              "duration": 953840200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tierDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4731896300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que acesso a Wikipedia em Portugues",
+            "match": {
+              "location": "Post.queAcessoAWikipediaEmPortugues()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1880273200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "pesquiso por \"Ovo de Páscoa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ovo de Páscoa",
+                  "offset": 14
+                }
+              ],
+              "location": "Post.pesquisoPor(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 364691300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "exibe a expressao \"Ovo de Páscoa\" no titulo da guia",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ovo de Páscoa",
+                  "offset": 19
+                }
+              ],
+              "location": "Post.exibeAExpressaoNoTituloDaGuia(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Consulta",
+    "description": "",
+    "id": "consulta",
+    "keyword": "Feature",
+    "uri": "Post.feature"
+  }
+]
