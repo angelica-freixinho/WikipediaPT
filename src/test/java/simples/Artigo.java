@@ -38,7 +38,8 @@ public class Artigo {
         String searchString  = new String("Ovo de Páscoa".getBytes(), "UTF-8");
 
         driver.findElement(By.id("searchInput")).sendKeys(searchString);
-        driver.findElement(By.id("searchButton")).click(); // clica na lupa
+        //driver.findElement(By.id("searchButton")).click(); // clica na lupa
+        driver.findElement(By.cssSelector("button.wvui-button")).click();
 
         String expectedTitle = new String("Ovo de Páscoa – Wikipédia, a enciclopédia livre".getBytes(), "UTF-8");
         String title = driver.getTitle();
